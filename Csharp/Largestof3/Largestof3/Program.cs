@@ -4,24 +4,33 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter first number");
-            int num1 = Convert.ToInt16(Console.ReadLine());
-            Console.WriteLine("Enter second number");
-            int num2 = Convert.ToInt16(Console.ReadLine());
-            Console.WriteLine("Enter third number");
-            int num3 = Convert.ToInt16(Console.ReadLine());
-            if (num1 > num2)
+            Console.WriteLine("Enter value a :");
+            int a = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("Enter value b :");
+            int b = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("Enter value c :");
+            int c = Convert.ToInt16(Console.ReadLine());
+            if (a > b && a > c)
             {
-                Console.WriteLine("num1 is greater");
+                Console.WriteLine("a is greater");
             }
-            else if (num2 > num3)
+            else if (b > c)
             {
-                Console.WriteLine("num2 is greater");
+                Console.WriteLine("b is greater");
             }
             else
             {
-                Console.WriteLine("num3 is greater");
+                Console.WriteLine("c is greater");
             }
+
+
+
+
+                    
+            
+                    
+      
+            
 
         }
     }
