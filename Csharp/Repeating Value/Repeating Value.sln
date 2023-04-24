@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repeating Value", "Repeating Value\Repeating Value.csproj", "{3469266E-184E-4528-8CA8-A6B9A5156BBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3469266E-184E-4528-8CA8-A6B9A5156BBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3469266E-184E-4528-8CA8-A6B9A5156BBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3469266E-184E-4528-8CA8-A6B9A5156BBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3469266E-184E-4528-8CA8-A6B9A5156BBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6D19255-031F-4923-95ED-D27C6663EF3E}
+	EndGlobalSection
+EndGlobal
