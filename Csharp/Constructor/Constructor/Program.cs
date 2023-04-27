@@ -6,12 +6,18 @@
         {
             Console.WriteLine("This is a Constructor");
         }
+        public void show()
+        {
+            Console.WriteLine("This is a show method");
+        }
     }
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Demo d = new Demo();
+            d.show();
+
         }
     }
 }
