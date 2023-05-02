@@ -69,6 +69,7 @@ namespace GenericsExercise
 
             Console.WriteLine("Top of the stack is: " + stack.Top);
             Console.WriteLine("Count: " + stack.Count);
+            
 
         }
     }    
