@@ -85,13 +85,53 @@ alter table reminder add constraint fk2 foreign key(reminder_creator) references
 
 
 
-
-
-
-
 select * from users
 select * from note
 select * from category
 select * from reminder
 select * from notecategory
+select * from NoteReminder
+
+--1.Fetch the row from User table with Id=112233 and Password=’Maya1214’.
+use KeepNote
+
+select * from users where userid=112233 and user_password='Maya1214'
+
+--2.Fetch all the rows from Note table with note_creation_date=’01/31/2019’.
+select * from  note where note_creation_date='2019-01-31'
+
+--3.Fetch all the Categories created after ‘01/22/2019’.
+select * from category where category_creation_date>'2019-01-22'
+
+--4.Fetch all category details which belongs to note with note id=1.
+select * from category
+select * from note
+select * from category where category_creator = (select userid from note where note_id = 1)
+
+--5.Fetch all the Notes from the Note table with userId=112244
+select * from note where userid = 112244
+
+--6.Fetch all the Notes from the Note table for category_id=1.
+select * from note
+select * from category
+select * from note where userid = (select category_creator from category where category_id = 1)
+
+--7.Fetch all the reminder details for note id=2.
+select * from reminder
+select * from note
+select * from reminder where reminder_creator = (select userid from note where note_id = 2)
+
+--8.Write a query to change the note_status to ‘Completed’ with note Id=3.
+update note set note_status='Completed' where note_id = 3
+select * from note
+
+--9.Write a query to set a reminder of type ‘Personal Reminders’ for Note with note id=1. 
+--[Find reminder id based upon reminder_type]
+select * from note
+select * from reminder
+update Reminder set reminder_type='personal reminders' where reminder_creator=(select userid from note where note_id = 1)
+select * from Reminder
+
+--10.Write a query to remove all reminders from Note with note_id=2.
+delete  from NoteReminder where note_id=2
 select * from NoteReminder
